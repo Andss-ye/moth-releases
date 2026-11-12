@@ -1,0 +1,24 @@
+name: Bug report
+description: Something does not work as it should
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you expected and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to reproduce it
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Moth and macOS versions
+      placeholder: "Moth 0.2.0, macOS 15.1"
+    validations:
+      required: true

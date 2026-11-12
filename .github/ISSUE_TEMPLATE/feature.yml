@@ -1,0 +1,14 @@
+name: Idea
+description: Something Moth could do
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does it solve
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: How do you imagine it
