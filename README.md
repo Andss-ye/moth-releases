@@ -11,7 +11,7 @@ Set an expiration date on what you download. When time is up, Moth sends it to t
 
 [![Latest release](https://img.shields.io/github/v/release/Andss-ye/moth-releases?label=release&color=2ea043)](https://github.com/Andss-ye/moth-releases/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/Andss-ye/moth-releases/total?color=2ea043)](https://github.com/Andss-ye/moth-releases/releases)
-![macOS 14+](https://img.shields.io/badge/macOS-14%2B-blue)
+![macOS 26+](https://img.shields.io/badge/macOS-26%2B-blue)
 ![Apple Silicon](https://img.shields.io/badge/Apple%20Silicon-M1%2B-blue)
 [![License: Freeware](https://img.shields.io/badge/license-freeware-lightgrey)](LICENSE)
 
@@ -39,7 +39,7 @@ A file lands in `~/Downloads` and a small island appears at the top of your scre
    ```
 3. Allow access to the Downloads folder when macOS asks.
 
-Requires macOS 14 or later on a Mac with Apple Silicon (M1 or newer).
+Requires macOS 26 or later on a Mac with Apple Silicon (M1 or newer).
 
 ## Usage
 
