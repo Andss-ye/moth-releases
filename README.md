@@ -39,7 +39,7 @@ curl -fsSL https://raw.githubusercontent.com/Andss-ye/moth-releases/main/install
 
 It downloads the latest `Moth.dmg`, copies Moth to **Applications** and opens it. Because `curl` does not mark the download as coming from a browser, macOS shows no warning. Read [`install.sh`](install.sh) first if you like: it is short.
 
-Prefer the DMG?
+Prefer the DMG? Its window shows these same steps.
 
 1. [Download `Moth.dmg`](https://github.com/Andss-ye/moth-releases/releases/latest/download/Moth.dmg), open it and drag **Moth** to **Applications**.
 2. Open Moth. macOS will block it the first time because the app is not notarized (see the [FAQ](#faq)). Click **Done**, not **Move to Trash**. Then go to **System Settings → Privacy & Security**, scroll down to the Moth message and click **Open Anyway**.
