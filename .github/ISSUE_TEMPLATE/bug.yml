@@ -19,6 +19,6 @@ body:
     id: version
     attributes:
       label: Moth and macOS versions
-      placeholder: "Moth 0.2.0, macOS 15.1"
+      placeholder: "Moth 0.2.0, macOS 26.1"
     validations:
       required: true
