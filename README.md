@@ -31,12 +31,18 @@ A file lands in `~/Downloads` and a small island appears at the top of your scre
 
 ## Install
 
+Paste this in Terminal:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/Andss-ye/moth-releases/main/install.sh | sh
+```
+
+It downloads the latest `Moth.dmg`, copies Moth to **Applications** and opens it. Because `curl` does not mark the download as coming from a browser, macOS shows no warning. Read [`install.sh`](install.sh) first if you like: it is short.
+
+Prefer the DMG?
+
 1. [Download `Moth.dmg`](https://github.com/Andss-ye/moth-releases/releases/latest/download/Moth.dmg), open it and drag **Moth** to **Applications**.
-2. Open Moth. macOS will block it the first time because the app is not notarized (see the [FAQ](#faq)). Go to **System Settings → Privacy & Security**, scroll down to the Moth message and click **Open Anyway**.
-   Prefer the terminal?
-   ```sh
-   xattr -dr com.apple.quarantine /Applications/Moth.app
-   ```
+2. Open Moth. macOS will block it the first time because the app is not notarized (see the [FAQ](#faq)). Click **Done**, not **Move to Trash**. Then go to **System Settings → Privacy & Security**, scroll down to the Moth message and click **Open Anyway**.
 3. Allow access to the Downloads folder when macOS asks.
 
 Requires macOS 26 or later on a Mac with Apple Silicon (M1 or newer).
@@ -61,8 +67,8 @@ Everything happens on your Mac. The only network request is the update check, wh
 
 ## FAQ
 
-**Why do I have to click "Open Anyway"?**
-Moth is not notarized by Apple, which requires a paid developer account. It is signed with its own certificate, and every update is verified with a separate cryptographic signature. If you would rather not run it, that is a fair call.
+**Why does macOS warn me when I install from the DMG?**
+Moth is not notarized by Apple, which requires a paid developer account. It is signed with its own certificate, and every update is verified with a separate cryptographic signature. The install command above avoids the warning; updates from inside Moth never show it. If you would rather not run it, that is a fair call.
 
 **What exactly can Moth delete?**
 Only files inside `~/Downloads` that you gave an expiration date, and only by moving them to the Trash. The date is stored as an extended attribute (`com.moth.expires`) on the file itself, so there is no database, and a file you modify after marking it stops expiring.
